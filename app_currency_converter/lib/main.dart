@@ -6,10 +6,14 @@ void main() {
 }
 
 class AppWidget extends StatelessWidget {
+  const AppWidget({Key? key}) : super(key: key);
+
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: HomeView(),
+      home: HomeView(
+        title: 'Home',
+      ),
     );
   }
 }
